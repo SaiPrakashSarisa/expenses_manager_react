@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom"
-import { SettingOutlined } from '@ant-design/icons';
+import { SettingOutlined, ProductOutlined, DollarOutlined } from '@ant-design/icons';
 import { Space } from 'antd';
 
 const SideBar = () => { 
 
     const navList = [
-        {'title': 'Dashboard', path: '/dashboard'},
-        {'title': 'Transactions', path: '/transactions'}
+        {'title': 'Dashboard', path: '/dashboard', icon: <ProductOutlined />},
+        {'title': 'Transactions', path: '/transactions', icon: <DollarOutlined />},
     ]
     return (
         <div className="sidebar-container">
@@ -16,7 +16,7 @@ const SideBar = () => {
                         <div >
                             <Link className="nav-item" to={item.path} key={index}>
                                 <div className="item">
-                                    <span>😀</span>
+                                    <span className="settings-icon">{item.icon}</span>
                                     <span>{item.title}</span>
                                 </div>
                             </Link>

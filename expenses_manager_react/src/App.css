@@ -190,7 +190,6 @@
 
 .nav-item {
   display: flex;
-  justify-content: center;
   align-items: center;
   color: black;
   border-radius: 1em;
@@ -202,8 +201,8 @@
 }
 
 .nav-item:hover {
-  /* background-color: #005b96; */
-  /* color: white; */
+  background-color: black;
+  color: white;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
@@ -218,11 +217,19 @@
 }
 
 .nav-settings:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
+.nav-settings:hover .settings-icon {
+  transform: rotate(360deg);
+}
+
 .settings-icon {
-  margin-right: 1em;;
+  margin-right: 1em;
+  transition: transform 0.6s ease-in-out;
 }
 
 /* Transactions styles  */
@@ -256,5 +263,42 @@
   border-radius: 1em;
   padding: 1em;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+.actions {
+  background: rgba(0, 0, 0, 0.15);
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: row;
+}
+
+.action-item {
+  cursor: pointer;
+  margin-right: 1em;
+  padding  : 0.4em  1em;
+  border-radius: 0.5em;
+}
+
+.active {
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);  
+}
+
+.categoreies {
+  height: 65%;
+  padding: 1em;
+  border: 1px solid rgb(196, 194, 194);
+  border-radius: .5em;
+}
+
+.form-actions {
+  border: 1px solid rgb(161, 161, 161);
+  border-radius: .5em;
+  height: 20%;
+  padding: 1em;
+}
