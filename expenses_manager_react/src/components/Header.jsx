@@ -1,4 +1,4 @@
-import {MenuOutlined} from '@ant-design/icons'
+import {MenuOutlined, UserOutlined} from '@ant-design/icons'
 import { Space } from 'antd';
 
 const Header = ({onMenuClick}) => { 
@@ -12,8 +12,8 @@ const Header = ({onMenuClick}) => {
                 <p className="app-title"> Money Manager</p>
 
             </div>
-            <div className="">
-                profile icon
+            <div className="profile-icon">
+            <UserOutlined />
             </div>
 
         </div>
