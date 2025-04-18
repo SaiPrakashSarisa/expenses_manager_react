@@ -10,66 +10,8 @@
 }
 
 /*  login styles  */
-.login-container{
-  margin: 0px; 
-  padding: 0px;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-}
-
-.title-form-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-}
-
-.title-text {
-  font-size: clamp(1rem, 2vw + 1rem, 5rem);
-}
-
-.login-form-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #f0f0f0;
-}
-
-.form-title {
-  font-size: 2rem;
-}
 
 
-/* layout styles  */
-.layout-container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.header-container {
-  height: 7%;
-  background-color: black;
-  color: white;
-  width: 100%;
-}
-
-.layout-body {
-  height: 93%;
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-}
-
-.sidebar-drawer {
-  padding: 0px;
-  margin: 0px;
-}
 
 /* Header styles  */
 .header {
@@ -116,14 +58,7 @@
 }
 
 /* Dashboard styles  */
-.dashboard-container {
-  height: 100%;
-  width: 100%;
-  padding: .8em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+
 
 .breadCrumb {
   color: #005b96;
@@ -131,48 +66,6 @@
   font-size: 1rem;
 }
 
-.container-one, .container-two {
-  height: 44%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  /* background-color: yellowgreen; */
-}
-
-.grid-container {
-  width: 50%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1em;
-}
-
-.card {
-  background-color: white;
-  border-radius: 1em;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-}
-
-.monthly-spent {
-  width: 48.5%;
-  border-radius: 1em;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-  background-color: white;
-}
-
-.assets {
-  width: 40%;
-  border-radius: 1em;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-  background-color: white;
-}
-
-.recents {
-  width: 58.5%;
-  border-radius: 1em;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-  background-color: white;
-}
 
 /* Side bar styles  */
 .sidebar-container {
@@ -233,72 +126,4 @@
 }
 
 /* Transactions styles  */
-.transactions-container {
-  height: 100%;
-  width: 100%;
-  padding: .8em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 
-.transactions-body {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 92%;
-}
-
-.transactions {
-  width: 40%;
-  height: 100%;
-  border-radius: 1em;
-  padding: 1em;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-}
-
-.add-transaction {
-  width: 58%;
-  height: 100%;
-  border-radius: 1em;
-  padding: 1em;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.actions {
-  background: rgba(0, 0, 0, 0.15);
-  padding: 1em;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  display: flex;
-  flex-direction: row;
-}
-
-.action-item {
-  cursor: pointer;
-  margin-right: 1em;
-  padding  : 0.4em  1em;
-  border-radius: 0.5em;
-}
-
-.active {
-  background-color: white;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);  
-}
-
-.categoreies {
-  height: 65%;
-  padding: 1em;
-  border: 1px solid rgb(196, 194, 194);
-  border-radius: .5em;
-}
-
-.form-actions {
-  border: 1px solid rgb(161, 161, 161);
-  border-radius: .5em;
-  height: 20%;
-  padding: 1em;
-}

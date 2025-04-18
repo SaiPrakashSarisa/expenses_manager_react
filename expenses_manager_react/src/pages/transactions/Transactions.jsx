@@ -1,4 +1,6 @@
 import { useState } from "react";
+import './transactions.css';
+import icons from '../../services/icons';
 
 const Transactions = () => {
 
@@ -16,7 +18,23 @@ const Transactions = () => {
                         <div className={`action-item ${action === 'Income' ? 'active' : ''}`} onClick={()=> {setAction('Income')}}>Income</div>
                         <div className={`action-item ${action === 'Transfer' ? 'active' : ''}`} onClick={()=> {setAction('Transfer')}}>Transfer</div>
                     </div>
-                    <div className="categoreies">Categories icons</div>
+                    <div className="categoreies">
+                        {
+                            icons.map((category, index) => (
+                                <div key={index} className='category-section'>
+                                    <p className="category-title">{category.category}</p>
+                                    <div className="category-icons">
+                                        {category.icons.map((item, iconIndex) => (
+                                            <div className="category" key={iconIndex}>
+                                                <div className="cat-icon">{item.icon}</div>
+                                                <div className="cat-label">{item.desc}</div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            ))
+                        }
+                    </div>
                     <div className="form-actions">form and submit</div>
                 </div>
             </div>

@@ -1,0 +1,33 @@
+.login-container{
+    margin: 0px; 
+    padding: 0px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  
+  .title-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  
+  .title-text {
+    font-size: clamp(1rem, 2vw + 1rem, 5rem);
+  }
+  
+  .login-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+  }
+  
+  .form-title {
+    font-size: 2rem;
+  }
