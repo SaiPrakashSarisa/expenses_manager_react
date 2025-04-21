@@ -66,13 +66,6 @@
     border-radius: .5em;
     overflow: auto;
   }
-  
-  .form-actions {
-    border: 1px solid rgb(161, 161, 161);
-    border-radius: .5em;
-    height: 20%;
-    padding: 1em;
-  }
 
   .category-title {
     font-family: 'Robot', sans-serif;
@@ -133,4 +126,58 @@
     padding: 0.5em;
     margin-left: 0.5em;
   }
+
+  .form-actions {
+    border: 1px solid rgb(161, 161, 161);
+    border-radius: .5em;
+    height: 20%;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .input {
+    height: 48%;
+    border-radius: .5em;
+    outline: none;
+    border: .5px solid grey;
+    padding: .3em;
+  }
+
+  .desc{
+    width: 60%;
+    margin-right: .5em;
+    margin-bottom: 0.5em;
+  }
+
+  .asset {
+    width: 38%;
+  }
+
+  .amount {
+    width: 45%;
+    margin-right: .5em;
+  }
+
+  .date {
+    width: 24%;
+    margin-right: .5em;
+  }
+
+  .time {
+    width: 15%;
+    margin-right: 0.5em;
+  }
+
+  .submit-button {
+    height: 48%;
+    width: 12%;
+    border-radius: 0.5em;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    /* padding: 0.3em 0.5em; */
+  }
+
+
 
