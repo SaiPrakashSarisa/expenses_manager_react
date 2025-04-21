@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom"
 import { SettingOutlined, ProductOutlined, DollarOutlined } from '@ant-design/icons';
+import { FaWallet } from "react-icons/fa";
+import { BsGraphUpArrow } from "react-icons/bs";
 import { Space } from 'antd';
 
 const SideBar = () => { 
@@ -7,6 +9,8 @@ const SideBar = () => {
     const navList = [
         {'title': 'Dashboard', path: '/dashboard', icon: <ProductOutlined />},
         {'title': 'Transactions', path: '/transactions', icon: <DollarOutlined />},
+        {'title': 'Assets', path: '/transactions', icon: <FaWallet />},
+        // {'title': 'Investments', path: '/transactions', icon: <BsGraphUpArrow />},
     ]
     return (
         <div className="sidebar-container">

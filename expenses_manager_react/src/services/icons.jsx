@@ -4,9 +4,9 @@ import { GiTomato, GiPumpkin, GiBeet, GiPineapple, GiShinyApple, GiGrapes, Gi3dG
     GiAutoRepair, GiCakeSlice, GiWrappedSweet, GiChocolateBar, GiCookie, GiPaintRoller, GiConsoleController,
     GiDrill, GiVacuumCleaner, GiPartyPopper, GiWaveSurfer, GiVideoCamera, GiStrawberry, GiSpottedMushroom,
     GiSewingMachine, GiSchoolBag, GiShorts, GiSkirt, GiTShirt, GiTankTop, GiTravelDress, GiTrousers,
-    GiConverseShoe, GiRunningShoe, GiTakeMyMoney, GiMoneyStack,
+    GiConverseShoe, GiRunningShoe, GiTakeMyMoney, GiMoneyStack, GiCash, GiWallet
 } from "react-icons/gi";
-import { SiNetflix, SiPrime, SiKfc  } from "react-icons/si";
+import { SiNetflix, SiPrime, SiKfc, SiIcicibank  } from "react-icons/si";
 import { BiCameraMovie, BiSolidTrain } from "react-icons/bi";
 import { IoIosIceCream } from "react-icons/io";
 import { IoCarSportOutline } from "react-icons/io5";
@@ -228,10 +228,22 @@ export const bankingIcons = [
         label: 'GiMoneyStack', icon : <GiMoneyStack />, desc: 'Money Stack'
     },
     {
-        label: 'GiTakeMyMoney', icon : <GiTakeMyMoney />, desc: 'Cash'
+        label: 'GiCash', icon : <GiCash />, desc: 'Coins'
     },
     {
-        label: 'GiTakeMyMoney', icon : <GiTakeMyMoney />, desc: 'Cash'
+        label: 'GiTakeMyMoney', icon : <SiIcicibank />, desc: 'Cash'
+    },
+]
+
+export const banks = [
+    {
+        lable: 'HDFC', icon: '', desc: 'HDFC'
+    },
+    {
+        lable: 'SBI', icon: '', desc: 'SBI'
+    },
+    {
+        lable: 'SBI', icon: <GiWallet  />, desc: 'SBI'
     },
 ]
 
